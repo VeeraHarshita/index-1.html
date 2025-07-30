@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML forms</title>
+  </head>
+  <body>
+    <center>
+      <img src="./screenShots/head.png" width="60%" />
+    </center>
+    <center>
+      <form>
+        <br />
+        <fieldset style="width: 55%">
+          <legend align="left">
+            Application Details
+          </legend>
+          <table cellpadding="5" width="100%">
+            <tr>
+              <td>
+                <label for="name"
+                  >Name<sup style="color: red">*</sup></label
+                >
+              </td>
+              <td><input type="text" id="name" name="name" required /></td>
+
+              <td>
+                <label for="father's name"
+                  >Father's/Gaurdian's Name</b
+                  ><sup style="color: red">*</sup></label
+                >
+              </td>
+              <td>
+                <input
+                  type="text"
+                  id="father's name"
+                  name="father's name"
+                  required
+                />
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="DOB"
+                  >Date of birth<sup style="color: red">*</sup></label
+                >
+              </td>
+              <td>
+                <input type="date" id="DOB" name="DOB" required />
+              </td>
+              <td>
+                <label for="Gender"
+                  >Gender<sup style="color: red">*</sup></label
+                >
+              </td>
+              <td>
+                <input type="radio" name="Gender" id="female" />
+                <label for="female">Female</label>
+
+                <input type="radio" name="Gender" id="male" required />
+                <label for="male">Male</label>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Age As on:</label>
+              </td>
+              <td>
+                <input type="text" id="years" size="2" />
+                <label for="years">Year(s)</label>
+                <input type="text" id="months" size="2" />
+                <label for="months">Month(s)</label>
+                <input type="text" id="days" size="2" />
+                <label for="days">Day(s)</label>
+              </td>
+              <td>
+                <label for="aadhar">Aadhaar No:</label>
+              </td>
+              <td>
+                <input type="text" id="aadhar" name="aadhar" maxlength="12" minlength="12" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="WhatsApp"
+                  >WhatsApp No<sup style="color: red">*</sup></label
+                >
+              </td>
+              <td>
+                <input type="text" id="WhatsApp" name="WhatsApp" required />
+              </td>
+              <td>
+                <label for="email"
+                  >E-mail Id<sup style="color: red">*</sup></label
+                >
+              </td>
+              <td>
+                <input type="email" id="email" name="email" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="photo"
+                  >Photo<sup style="color: red">*</sup></label
+                >
+              </td>
+              <td>
+                <input type="file" id="photo" name="photo"/>
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+<br>
+<fieldset style="width: 55%">
+  <legend align="left">
+    Residential Address Details
+  </legend>
+  <table width="100%" cellpadding="5">
+    <tr>
+      <td><label for="address">Applicant' Address</label><sup style="color: red">*</sup></td>
+      <td><textarea id="address" name="address" rows="5" cols="20" required></textarea></td>
+      <td><label for="district">District</label><sup style="color: red">*</sup></td>
+      <td><select id="district" name="district" required>
+        <option>Hyderabad</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td><label for="mandal">Mandal</label><sup style="color: red">*</sup></td>
+      <td><select id="mandal" name="mandal" required>
+        <option>Hyderabad</option>
+      </select></td>
+      <td><label for="village">Village</label><sup style="color: red">*</sup></td>
+      <td><select id="village" name="village" required>
+        <option>Hyderabad</option>
+        <option>Hyderabad</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td><label for="pincode">Pincode</label><sup style="color: red">*</sup></td>
+      <td><input type="text" id="pincode" name="pincode" required></td>
+      
+    </tr>
+  </table>
+</fieldset>
+<br>
+
+<fieldset style="width: 55%;">
+  <legend align="left">Pass Type Details</legend>
+  <table align="left" cellpadding="5">
+    <tr>
+      <td><label for="city">City</label><sup style="color: red">*</sup></td>
+      <td>
+      <select name="city" id="city" required >
+        <option>Hyderabad</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="passtype">Pass Type</label><sup style="color: red">*</sup></td>
+      <td>
+      <select name="passtype" id="passtype" required>
+        <option>----Select----</option>
+        <option>GREATER PASS</option>
+        <option>GENERAL ORDINARY ROUTE PASS MTLY</option>
+        <option>GENERAL METRO EXPRESS ROUTE PASS MTLY</option>
+        <option>ORDINARY PASS</option>
+        <option>METRO EXPRESS PASS</option>
+        <option>METRO DELUX PASS</option>
+      </select></td>
+    </tr>
+  </table>
+</fieldset>
+<br>
+
+<fieldset style="width: 55%;">
+  <legend>Mode of Payment & Pass Collection</legend>
+  <table align="left" cellpadding="5">
+    <tr>
+      <td><label for="payment">Payment Mode</label><sup style="color: red">*</sup></td>
+      <td>
+        <select id="payment" name="payment" required>
+          <option>Select Payment Mode</option>
+          <option>Payment at Counter</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="deliveryMode">Pass Delivery Mode</label><sup style="color: red">*</sup></td>
+      <td>
+        <select id="deliveryMode" name="deliveryMode" required>
+          <option>Select Pass Delivery Mode</option>
+          <option>At Counter</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td><label for="selection">Center at which you want to Collect Pass</label><sup style="color: red">*</sup></td>
+      <td>
+        <select name='selection' id="selection" required>
+          <option>----Select----</option>
+          <option >RTC ABIDS--HYD[30/07/2025]</option>
+          <option >RTC AFZALLGUNJ--HYD[30/07/2025]</option>
+          <option >RTC AIRPORT--HYD[30/07/2025]</option>
+          <option >RTC ARAMGHAR--HYD[30/07/2025]</option>
+          <option >RTC BALA NAGAR--HYD[30/07/2025]</option>
+          <option >RTC BORABANDA--HYD[30/07/2025]</option>
+          <option >RTC CBS--HYD[30/07/2025]</option>
+          <option >RTC CHARMINAR--HYD[30/07/2025]</option>
+          <option >RTC DILSUKHNAGAR--HYD[30/07/2025]</option>
+          <option >RTC ECIL--HYD[30/07/2025]</option>
+          <option >RTC SANATHNAGAR--HYD[30/07/2025]</option>
+          <option >RTC SECERTARIAT--HYD[30/07/2025]</option>
+          <option >RTC SHAMSHABAD--HYD[30/07/2025]</option>
+          <option >RTC SR NAGAR--HYD[30/07/2025]</option>
+          <option >RTC SUCHITRA--HYD[30/07/2025]</option>
+          <option >RTC TARNAKA--HYD[30/07/2025]</option>
+          <option >RTC THUKKUGUDA--HYD[30/07/2025]</option>
+          <option >RTC UPPAL X ROAD--HYD[30/07/2025]</option>
+          <option >RTC W.COLLEGE--HYD[30/07/2025]</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+</fieldset>
+
+<br>
+<img src="./screenShots/captcha.png" width="200">
+<br>
+<input type="text">
+<br>
+<br>
+<input type="submit">
+      </form>
+    </center>
+  </body>
+</html>
